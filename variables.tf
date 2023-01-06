@@ -1,18 +1,9 @@
-variable "enable" {
-  default = true
-}
+variable "enable" { default = true }
 
-variable "function_name" {
-}
+variable "function_name" {}
 
-variable "function_arn" {
-}
+variable "function_arn" {}
 
-variable "input" {
-  default = "{\"Records\":[]}"
-}
+variable "input" { default = "{\"body\":null,\"httpMethod\":\"GET\",\"path\":\"/health\",\"requestContext\":{}}" }
 
-variable "rate" {
-  default = "rate(4 minutes)"
-}
-
+variable "rate" { default = "rate(5 minutes)" }
